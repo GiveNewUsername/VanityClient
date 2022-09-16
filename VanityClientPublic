@@ -1,0 +1,195 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Kronos"))()
+
+local window = library:Window({
+   Title = "Vanity Client - Bedwars Hack Client",
+   Accent = Color3.fromRGB(69,69,207),
+   Logo = 3610245066,
+   ToggleKey = Enum.KeyCode.LeftAlt
+})
+------------------------------
+local tab = window:NewTab({
+   Logo = 4483345998
+})
+----------------------------------
+local tabsection = tab:TabSection({
+   Title = "Blatant"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Fly"
+})
+
+local column = tabsection:AddColumn({
+   Title = "BHop"
+})
+
+local column = tabsection:AddColumn({
+   Title = "WTap"
+})
+
+local column = tabsection:AddColumn({
+   Title = "KillAura"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Aimbot"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Flicker"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Speed"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Nuker"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Scaffold"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Phase"
+})
+
+
+
+
+
+
+----------------------------------------
+
+local tabsection = tab:TabSection({
+   Title = "Combat"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Reach"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Velocity"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Hitboxes"
+})
+
+local column = tabsection:AddColumn({
+   Title = "SwordAim"
+})
+
+------------------------------------
+local tabsection = tab:TabSection({
+   Title = "Movement"
+})
+
+local column = tabsection:AddColumn({
+   Title = "HighJump"
+})
+
+local column = tabsection:AddColumn({
+   Title = "LongJump"
+})
+
+local column = tabsection:AddColumn({
+   Title = "EntitySpeed"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Float"
+})
+
+local column = tabsection:AddColumn({
+   Title = "AutoSprint"
+})
+
+local column = tabsection:AddColumn({
+   Title = "NoFall"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Step"
+})
+
+-----------------------------------
+local tabsection = tab:TabSection({
+   Title = "Rendering"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Chams"
+})
+
+local column = tabsection:AddColumn({
+   Title = "ESP"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Searcher"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Tracers"
+})
+
+local column = tabsection:AddColumn({
+   Title = "BCrumbs"
+})
+
+local column = tabsection:AddColumn({
+   Title = "NoBob"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Freecam"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Nametags"
+})
+
+----------------------------------
+local tabsection = tab:TabSection({
+   Title = "World"
+})
+
+local column = tabsection:AddColumn({
+   Title = "FastPlace"
+})
+
+local column = tabsection:AddColumn({
+   Title = "FastBreak"
+})
+
+local column = tabsection:AddColumn({
+   Title = "Fucker"
+})
+
+local column = tabsection:AddColumn({
+   Title = "XRay"
+})
+
+-----------------------------------
+local tabsection = tab:TabSection({
+   Title = "Utility"
+})
+
+local column = tabsection:AddColumn({
+   Title = "ACBypass"
+})
+
+
+local column = tabsection:AddColumn({
+   Title = "TPWalk"
+})
+
+
+local column = tabsection:AddColumn({
+   Title = "CFBypass"
+})
+
+---------------------------------
