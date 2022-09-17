@@ -1,9 +1,9 @@
--- Current Version: 0.01a
+-- Current Version: 0.02a
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Kronos"))()
 
 local window = library:Window({
-   Title = "Vanity Client v0.01a - Bedwars Hack Client",
+   Title = "Vanity Client v0.02a - Bedwars Hack Client",
    Accent = Color3.fromRGB(69,69,207),
    Logo = 3610245066,
    ToggleKey = Enum.KeyCode.LeftAlt
@@ -21,8 +21,15 @@ local column = tabsection:AddColumn({
    Title = "Fly"
 })
 
+
 local section = column:Section({
    Title = "Flight"
+})
+
+section:Keybind({
+   Text = "Bind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
 })
 
 section:Slider({
@@ -88,21 +95,47 @@ section:Toggle({
    State = false,
    Callback = function() end
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "BHop"
 })
 
+local section = column:Section({
+   Title = "BHop"
+})
+
+section:Keybind({
+   Text = "Bind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
+})
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "WTap"
 })
 
+local section = column:Section({
+   Title = "WTap"
+})
+
+section:Keybind({
+   Text = "Bind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
+})
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "KillAura"
 })
 
 local section = column:Section({
    Title = "KillAura"
+})
+
+section:Keybind({
+   Text = "Bind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
 })
 
 section:Dropdown({
@@ -198,31 +231,114 @@ section:Toggle({
    State = false,
    Callback = function() end
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Aimbot"
 })
 
+local section = column:Section({
+   Title = "Projectile Aimbot"
+})
+
+section:Keybind({
+   Text = "Bind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
+})
+
+section:Dropdown({
+   Text = "Mode",
+   List = {'Player', 'Mouse'},
+   Callback = function() end
+})
+
+section:Dropdown({
+   Text = "Part",
+   List = {'RootPart', 'Head'},
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Other Projectiles",
+   State = false,
+   Callback = function() end
+})
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Flicker"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Speed"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Nuker"
 })
 
+local section = column:Section({
+   Title = "Nuker"
+})
+
+section:Keybind({
+   Text = "Bind",
+   Key = Enum.KeyCode.F,
+   Callback = function() end
+})
+
+section:Slider({
+   Text = "Break Range",
+   Min = 1,
+   Max = 30,
+   Def = 5,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Hand Check",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Show HPBar & Effects",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Break Animation",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Self Break",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Break Beds",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Fly Disable",
+   State = false,
+   Callback = function() end
+})
+
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Scaffold"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Phase"
 })
-
+----------------------------------
 
 
 
@@ -233,52 +349,52 @@ local column = tabsection:AddColumn({
 local tabsection = tab:TabSection({
    Title = "Combat"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Reach"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Velocity"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Hitboxes"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "SwordAim"
 })
-
+----------------------------------
 ------------------------------------
 local tabsection = tab:TabSection({
    Title = "Movement"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "HighJump"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "LongJump"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "EntitySpeed"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Float"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "AutoSprint"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "NoFall"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Step"
 })
@@ -291,31 +407,31 @@ local tabsection = tab:TabSection({
 local column = tabsection:AddColumn({
    Title = "Chams"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "ESP"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Searcher"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Tracers"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "BCrumbs"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "NoBob"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Freecam"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Nametags"
 })
@@ -328,15 +444,15 @@ local tabsection = tab:TabSection({
 local column = tabsection:AddColumn({
    Title = "FastPlace"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "FastBreak"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "Fucker"
 })
-
+----------------------------------
 local column = tabsection:AddColumn({
    Title = "XRay"
 })
@@ -349,12 +465,12 @@ local tabsection = tab:TabSection({
 local column = tabsection:AddColumn({
    Title = "ACBypass"
 })
-
+----------------------------------
 
 local column = tabsection:AddColumn({
    Title = "TPWalk"
 })
-
+----------------------------------
 
 local column = tabsection:AddColumn({
    Title = "CFBypass"
