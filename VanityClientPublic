@@ -1,7 +1,9 @@
+-- Current Version: 0.01a
+
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Kronos"))()
 
 local window = library:Window({
-   Title = "Vanity Client - Bedwars Hack Client",
+   Title = "Vanity Client v0.01a - Bedwars Hack Client",
    Accent = Color3.fromRGB(69,69,207),
    Logo = 3610245066,
    ToggleKey = Enum.KeyCode.LeftAlt
@@ -19,6 +21,74 @@ local column = tabsection:AddColumn({
    Title = "Fly"
 })
 
+local section = column:Section({
+   Title = "Flight"
+})
+
+section:Slider({
+   Text = "Speed",
+   Min = 1,
+   Max = 74,
+   Def = 16,
+   Callback = function() end
+})
+
+section:Slider({
+   Text = "Vertical Speed",
+   Min = 1,
+   Max = 100,
+   Def = 16,
+   Callback = function() end
+})
+
+section:Dropdown({
+   Text = "Fly Mode",
+   List = {'Normal', 'CFrame', 'Heatseeker'},
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Y Level",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Pop Balloon",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Damage Animation",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Camera Animation",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Fly Anyway",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Boost Speed",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Progress Bar",
+   State = false,
+   Callback = function() end
+})
+
 local column = tabsection:AddColumn({
    Title = "BHop"
 })
@@ -29,6 +99,104 @@ local column = tabsection:AddColumn({
 
 local column = tabsection:AddColumn({
    Title = "KillAura"
+})
+
+local section = column:Section({
+   Title = "KillAura"
+})
+
+section:Dropdown({
+   Text = "Sort",
+   List = {'Distance', 'Health', 'Threat'},
+   Callback = function() end
+})
+
+section:Slider({
+   Text = "Attack Range",
+   Min = 1,
+   Max = 18,
+   Def = 1,
+   Callback = function() end
+})
+
+section:Slider({
+   Text = "Max Angle",
+   Min = 1,
+   Max = 360,
+   Def = 90,
+   Callback = function() end
+})
+
+section:Dropdown({
+   Text = "Animation",
+   List = {'Normal', 'Slow', 'New', 'Vertical Spin', 'Exhibition', 'Exhibition Old'},
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Req Mouse Down",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "GUI Check",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Show Target",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Face Target",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Range Visualizer",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Aim Visualizer",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "No Swing Sound",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "No Swing",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Limit to Items",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Baguette Aura",
+   State = false,
+   Callback = function() end
+})
+
+section:Toggle({
+   Text = "Custom Animation",
+   State = false,
+   Callback = function() end
 })
 
 local column = tabsection:AddColumn({
